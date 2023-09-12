@@ -3,7 +3,7 @@ package uno.vehiculos;
 public class Autobus extends Vehiculo {
 	/*En caso del Autobús, no puede cambiar de chofer si hubiera pasajeros.*/
 	
-	private Persona [] pasajeros = new Persona[10];
+	private Persona [] pasajeros;
 	int cantidadDePasajeros = 0;
 	
 	/*Constructor con cantidad de asientos*/
