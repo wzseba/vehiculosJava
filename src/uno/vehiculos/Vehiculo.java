@@ -4,11 +4,15 @@ public abstract class Vehiculo {
 	
 	/*Atributos*/
 	private Persona chofer;
-	private int kilometros;
+	private int kilometros = 0;
 	
 	/*Constructor*/
+	public Vehiculo(Persona chofer) {
+		this.chofer = chofer;
+	}
+	
 	public Vehiculo() {
-		this.kilometros = 0;
+		/*Constructor sin argumentos*/
 	}
 	
 	/*Metodos*/
