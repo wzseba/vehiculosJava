@@ -6,12 +6,26 @@ public class Motocicleta extends Vehiculo {
 	private Persona acompaniante;
 	
 	/*Constructor*/
+	public Motocicleta(Persona chofer) {
+		super(chofer);
+	}
+	
 	public Motocicleta() {
 		super();
 	}
 
-	public void agregarAcompaniante(Persona acomp) {
-		this.acompaniante = acomp;
+	public void subirAcompaniante(Persona acomp) {
+		if(this.acompaniante == null) {
+			this.acompaniante = acomp;			
+		}
+	}
+
+	public void bajarAcompaniante() {
+		this.acompaniante = null;
+	}
+	
+	public Persona getAcompaniante() {
+		return acompaniante;
 	}
 
 	@Override
